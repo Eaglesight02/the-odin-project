@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML file about lists</title>        
+    <style>
+        .horizontal {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .float_list {
+            float: left;
+            margin: 0 10px;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>This html file is about the use of ordered and unordered lists</h1>
+</body>
+<h2>Lists:</h2>
+    <section>   
+        <h3>Unordered Lists:</h3>
+        <p>We create an unordered list with the &lt;ul&gt; tag and including the &lt;li&gt; tag for each list element within the unordered list.</p>
+        <p>An example can be given for the below shopping list:</p>
+        <ul>
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Guavas</li>
+            <li>Eggplant</li>
+            <li>All mix spices</li>
+        </ul>
+        <p>Notice that we only get filled circles as the pointers, but we can change that using styling, to perhaps: squares</p>
+        <ul style="list-style-type:square;">
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Guavas</li>
+            <li>Eggplant</li>
+            <li>All mix spices</li>
+        </ul>
+        <p>Fancy a hollow circle?</p>
+        <ul style="list-style-type:circle">
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Guavas</li>
+            <li>Eggplant</li>
+            <li>All mix spices</li>
+        </ul>
+        <p>That is enough for unordered lists, now let's go to Ordered lists.</p>
+    </section>  
+    <br> 
+    <section>
+        <h3>Ordered Lists:</h3>
+        <p>We create an ordered list with the &lt;ol&gt; tag and include the &lt;li&gt; tag for each list element within the ordered list.</p>
+        <p>An example can be taken for the same grocery list:</p>
+        <ol>
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Guavas</li>
+            <li>Eggplant</li>
+            <li>All mix spices</li>
+        </ol>
+        <p>Now, we can change the order to maybe, decreasing (strictly)?</p>
+        <ol reversed>
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Guavas</li>
+        </ol>
+        <p>Perhaps we want to start our ordering from a pre-determined number?</p>
+        <ol start="56">
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Guavas</li>
+        </ol>
+        <h4>Note: We can also create horizontal lists:</h4>
+        <p>
+            To display lists in horizontal fashion, we either use inline-block or inline value for the display property.
+            Using inline-block, we can add vertical lines, so it is more preferred.
+            When inline-block or inline is used, the list element marker - which is a circle, disc, square, number, etc... is removed.
+            Here, we are including margin of 0 for top and bottom and 10px for left and right.  
+        </p>
+        <p>For unordered list:</p>
+        <ul>
+            <li class="horizontal">Apples</li>
+            <li class="horizontal">Oranges</li>
+            <li class="horizontal">Guavas</li>
+            <li class="horizontal">Eggplant</li>
+            <li class="horizontal">All mix spices</li>
+        </ul>
+        <p>For ordered list:</p>
+        <ol>
+            <li class="horizontal">Apples</li>
+            <li class="horizontal">Oranges</li>
+            <li class="horizontal">Guavas</li>
+            <li class="horizontal">Eggplant</li>
+            <li class="horizontal">All mix spices</li>
+        </ol>
+        <p>As we can see above, there is no change or difference, as the list element marker is removed.</p>
+        <h4>If we want the list marker, then we can use the float property instead of the inline-block or inline properties</h4>
+        <ul>
+            <li class="float_list">Apples</li>
+            <li class="float_list">Oranges</li>
+            <li class="float_list">Guavas</li>
+        </ul>
+        <br>
+    </section>
+    <br>
+    <section>
+        <h3>Description Lists:</h3>
+        <p>A description list is a list of having terms and their descriptions.</p>
+        <p>We create a description list using the &lt;dl&gt; tag with &lt;dt&gt; as the description term and &lt;dd&gt; as the description element.</p>
+        <dl>
+            <dt>Apples</dt>
+            <dd>Apples are good for your health</dd>
+            <dt>Oranges</dt>
+            <dd>They are high in Vitamin C</dd>
+            <dt>Watermelon</dt>
+            <dd>They are rich in water content and mostly eaten during summers</dd>
+        </dl>
+    </section>
+</html>

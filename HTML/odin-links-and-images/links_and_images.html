@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File about Images and Links</title>
+</head>
+<body>
+    <h1 id="homepage">Homepage</h1>
+    <section>
+        <h2>Anchor tag:</h2>
+        <p>For displaying links, we use the &lt;a&gt; (anchor) tag.</p>
+        <a href="https://www.theodinproject.com/about">About the Odin Project</a>
+        <br>
+        <a href="#relative">Go to the bottom</a>
+        <h3>Attributes:</h3>
+        <ul>
+            <li>
+                <p>href: it gives the uri (either local or in the world wide web) to point to:</p>
+                <ul>
+                    <li>Sections of a page with document fragments</li>
+                    <li>Specific text portions with text fragments</li>
+                    <li>Pieces of media files with media fragments</li>
+                    <li>Telephone numbers with tel: URLs</li>
+                    <li>Email addresses with maito: URLs</li>
+                    <li>SMS text messages with sms: URLs</li>
+                </ul>
+            </li>
+            <li>
+                <p>target: where the given href should be opened:</p>
+                <ul>
+                    <li>_blank: a new tab or window(needs to be customized).</li>
+                    <li>_self: in the current session or frame or context.</li>
+                    <li>_parent: in the parent frame or context</li>
+                    <li>_top: in the top level frame or context</li>
+                </ul>
+                <p>The below link opens the website in a new tab</p>
+                <a href="https://www.theodinproject.com/about" target="_blank">About the Odin Project</a>
+            </li>
+            <li>
+                <p>rel: The relationship of the linked URL as a space-separated link types.</p>
+                <ul>
+                    <li>noreferer: This would not send the referer header. The referer headers contains information about the page that requested the URL, mostly used for user-analytics and logging.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur vel placeat eum accusamus assumenda maiores numquam dolore illo incidunt a, rerum minima, cumque, commodi expedita inventore soluta dolores! Quos, reprehenderit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur vel placeat eum accusamus assumenda maiores numquam dolore illo incidunt a, rerum minima, cumque, commodi expedita inventore soluta dolores! Quos, reprehenderit.</p>    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur vel placeat eum accusamus assumenda maiores numquam dolore illo incidunt a, rerum minima, cumque, commodi expedita inventore soluta dolores! Quos, reprehenderit.</p>    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur vel placeat eum accusamus assumenda maiores numquam dolore illo incidunt a, rerum minima, cumque, commodi expedita inventore soluta dolores! Quos, reprehenderit.</p>    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur vel placeat eum accusamus assumenda maiores numquam dolore illo incidunt a, rerum minima, cumque, commodi expedita inventore soluta dolores! Quos, reprehenderit.</p>
+        <p>Link to specific parts of the webpage: we use href="#id" of the tag</p>
+        <a id="bottom" href="#homepage">Go to Top</a>
+        <p>Link to mail address, we use href="mailto:email_address"</p>
+        <a id="email" href="mailto:abcemail@xyz.com">Send email</a>
+        <p>Link to phone number, we use href="tel:phone_number"</p>
+        <a id="phone" href="tel:+91 9492854734">Phone</a>
+        <p>Link to relative page: we use href="relative_path" './' tells the browser that it should start looking fro the file/directory <em>relative</em> to the current directory</p>
+        <a id="relative" href="./about.html">About</a>
+    </section>
+    <section>
+        <h2>Linking images:</h2>
+        <p>img tag is self-closing</p>
+        <p>For linking the image, we include the attribute 'src'</p>
+        <img src="https://www.theodinproject.com/mstile-310x310.png">
+        <h4>Alt attibute: text that is displayed when image cannot be displayed</h4>
+        <p>the 'alt' attribute is used to display an alternate text when the image is not found or cannot be displayed. It is also highly used for accessibility purposes for screen readers.</p>
+        <p>The below is an image, with its src attribute wrong, but alt is displayed.</p>
+        <img src="https://www.theodinproject.com/mstile-310x310.png1" alt="The Odin Project Logo: An animated picture of Odin's face, facing the user with an eye patch on his right eye.">
+        <p>Specifying the image's height and width is not strictly required, but it helps if using css is too complex.</p>
+        <h4>The height and width attributes:</h4>
+        <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo: An animated picture of Odin's face, facing the user with an eye patch on his right eye." height="310" width="310">
+    </section>
+</body>
+</html>

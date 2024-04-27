@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Times New Roman', 'Sans Serif', Serif;
+    color: black;
+    text-align: center;
+    /* text-align-last: center; */
+}
+
+.box-1 {
+    background-color: red;
+    height: 100px;
+    width: 140px;
+    padding: 20px;
+    border: 10px solid yellow;
+    margin: 40px;
+    box-sizing: border-box;
+}
+
+.box-2 {
+    background-color: skyblue;    
+    height: 100px;
+    width: 140px;
+    padding: 20px;
+    border: 10px solid purple;
+    margin: 40px;
+    box-sizing: border-box;
+}
+
+/* Margin: exists outside the box-model and separates elements */
+/* Border: Exists inside the box-model and gives border to the elements. It can be styled, colored and given width */
+/* Padding: Space between border and the inside content of the element */
+/* box-sizing: content-box: default, height and width declared are applied to the content of the element. Border, padding and margin are added respectively to the height and width based on the values given */
+/* box-sizing: border-box: height and width are for the entire element (including margin-top + margin-bottom + border-top + border-bottom + content-height for height and respectfully the same for width. */
+
+
+/* Margin: If one value is given, it is applied to all the four directions.
+If two values are given, first value is for top, bottom and second is for left and right.
+If three are given, first for top, second for left, right and third for bottom. */
+/* Padding: Same as margin */
+
+/* Margin collapse: only between vertically separated elements:
+1. Two positive margins: the larger one is the margin.
+2. Two negative margins: the smaller one is the margin.
+3. One positive and one negative margin: the difference between the two is the margin. */
